@@ -3,10 +3,6 @@ import axios from 'axios';
 const api = axios.create({
   baseURL: 'smart-backend-cndjcnaxa9dshwb9.eastasia-01.azurewebsites.net/api',
   // baseURL: 'http://127.0.0.1:8000/api', // Local API
-=======
-  baseURL: import.meta.env.VITE_API_URL || 'smart-backend-cndjcnaxa9dshwb9.eastasia-01.azurewebsites.net/api',
-  // baseURL: 'http://127.0.0.1:8000/api', 
->>>>>>> 98f4c43e3514fdc27aa3d25c53d092ea8123e107
   headers: {
     'Content-Type': 'application/json',
   },
