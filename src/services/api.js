@@ -1,11 +1,10 @@
 import axios from 'axios';
 
 const api = axios.create({
-<<<<<<< HEAD
-  baseURL: 'https://smart-backend-cndjcnaxa9dshwb9.eastasia-01.azurewebsites.net/api', // Azure API
+  baseURL: 'smart-backend-cndjcnaxa9dshwb9.eastasia-01.azurewebsites.net/api',
   // baseURL: 'http://127.0.0.1:8000/api', // Local API
 =======
-  baseURL: import.meta.env.VITE_API_URL || 'https://bearlab-backend-d9awbhgfe4c6abdq.southeastasia-01.azurewebsites.net/api',
+  baseURL: import.meta.env.VITE_API_URL || 'smart-backend-cndjcnaxa9dshwb9.eastasia-01.azurewebsites.net/api',
   // baseURL: 'http://127.0.0.1:8000/api', 
 >>>>>>> 98f4c43e3514fdc27aa3d25c53d092ea8123e107
   headers: {
@@ -66,7 +65,7 @@ export const reviewService = {
 };
 
 // Function App URL - Replace with your actual Azure Function App URL
-const FUNCTION_API_URL = 'https://bearlab-function-app-baebfye2fnb7bmcj.southeastasia-01.azurewebsites.net/api';
+const FUNCTION_API_URL = 'smart-review-import-d6gegcbdg7cugqfe.eastasia-01.azurewebsites.net/api';
 
 const functionApi = axios.create({
   baseURL: FUNCTION_API_URL,
